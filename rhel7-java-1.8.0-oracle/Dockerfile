@@ -6,6 +6,7 @@ ENV JAVA_VERSION=${JAVA_VERSION:-1.8.0} \
 
 ENV JAVA_HOME=/usr/lib/jvm/java-${JAVA_VERSION}-${JAVA_TYPE}
 
+RUN subscription-manager repos --enable rhel-7-server-restricted-maintenance-oracle-java-rpms
 RUN yum --disablerepo=* \
         --enablerepo=rhel-7-server-rpms \
         --enablerepo=rhel-7-server-extras-rpms \
