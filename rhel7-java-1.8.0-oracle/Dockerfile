@@ -9,7 +9,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-${JAVA_VERSION}-${JAVA_TYPE}
 RUN yum --disablerepo=* --enablerepo=rhel-7-server-rpms install yum-utils
 RUN yum --enablerepo=rhel-7-server-extras-rpms \
         --enablerepo=rhel-7-server-optional-rpms \
-        --enablerepo=rhel-7-server-thirdparty-oracle-java-rpms \
       install -y \
       java-${JAVA_VERSION}-${JAVA_TYPE}-devel \
       java-${JAVA_VERSION}-${JAVA_TYPE}-jdbc && \
