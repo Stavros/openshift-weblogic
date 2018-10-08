@@ -35,7 +35,7 @@ items:
     source:
       type: Git
       git:
-        uri: https://github.com/jkupferer/openshift-weblogic.git
+        uri: https://github.com/stavros/openshift-weblogic.git
       contextDir: rhel7-java-1.8.0-oracle
     strategy:
       dockerStrategy:
